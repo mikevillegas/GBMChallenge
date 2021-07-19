@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27149EC126A3C18500872F66 /* GBMIPCDetailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27149EBF26A3C18500872F66 /* GBMIPCDetailListVC.swift */; };
+		27149EC226A3C18500872F66 /* GBMIPCDetailListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27149EC026A3C18500872F66 /* GBMIPCDetailListVC.xib */; };
+		27149EC926A3C3C600872F66 /* GBMIPCChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27149EC726A3C3C600872F66 /* GBMIPCChartVC.swift */; };
+		27149ECA26A3C3C600872F66 /* GBMIPCChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27149EC826A3C3C600872F66 /* GBMIPCChartVC.xib */; };
+		27149ECF26A3C76E00872F66 /* GBMIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27149ECE26A3C76E00872F66 /* GBMIcons.xcassets */; };
+		27149EE126A3F56100872F66 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27149EE026A3F56000872F66 /* String.swift */; };
+		27149EF126A41F6D00872F66 /* GBMIPCCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27149EEF26A41F6D00872F66 /* GBMIPCCellTableViewCell.swift */; };
+		27149EF226A41F6D00872F66 /* GBMIPCCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27149EF026A41F6D00872F66 /* GBMIPCCellTableViewCell.xib */; };
+		2740985D269EB29F00BD3E8F /* GBMConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2740985C269EB29F00BD3E8F /* GBMConnectManager.swift */; };
+		27409875269EB71A00BD3E8F /* GBMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27409874269EB71A00BD3E8F /* GBMError.swift */; };
+		27409882269EC3F200BD3E8F /* GBMIPCEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27409881269EC3F200BD3E8F /* GBMIPCEntity.swift */; };
+		274DC6EA269EA87800F6E463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DC6E9269EA87800F6E463 /* AppDelegate.swift */; };
+		274DC6F6269EA87D00F6E463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274DC6F4269EA87D00F6E463 /* LaunchScreen.storyboard */; };
+		274DC701269EA87E00F6E463 /* GBMChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DC700269EA87E00F6E463 /* GBMChallengeTests.swift */; };
+		274DC70C269EA87E00F6E463 /* GBMChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DC70B269EA87E00F6E463 /* GBMChallengeUITests.swift */; };
+		276F2B8F26A395E300B30609 /* GBMColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276F2B8E26A395E300B30609 /* GBMColors.xcassets */; };
+		276F2B9926A39A1800B30609 /* Branding.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276F2B9826A39A1800B30609 /* Branding.xcassets */; };
+		27A9FEAB26A530430055512D /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9FEAA26A530430055512D /* Float.swift */; };
+		27D19F9526A4EA0000C82298 /* GBMIPCChartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D19F9426A4EA0000C82298 /* GBMIPCChartProtocol.swift */; };
+		27D19FB126A4F0F600C82298 /* GBMIPCChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D19FB026A4F0F600C82298 /* GBMIPCChartInteractor.swift */; };
+		27D19FB726A4F7F100C82298 /* GBMIPCChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D19FB626A4F7F100C82298 /* GBMIPCChartPresenter.swift */; };
+		27D19FBC26A4FAF200C82298 /* GBMIPCChartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D19FBB26A4FAF200C82298 /* GBMIPCChartRouter.swift */; };
+		27E2775226A38E1D003E15A8 /* GBMLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2775026A38E1D003E15A8 /* GBMLoginVC.swift */; };
+		27E2775326A38E1D003E15A8 /* GBMLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E2775126A38E1D003E15A8 /* GBMLoginVC.xib */; };
+		27E2776B26A39147003E15A8 /* GBMInvestmentAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 27E2776A26A39146003E15A8 /* GBMInvestmentAnimation.json */; };
+		27FE08D526A3A51400DBBF3E /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 276F2B9426A3991000B30609 /* FontAwesome.otf */; };
+		27FE08F526A3A6AC00DBBF3E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE08F326A3A6AC00DBBF3E /* UIViewController.swift */; };
+		27FE08F626A3A6AC00DBBF3E /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FE08F426A3A6AC00DBBF3E /* UINavigationController.swift */; };
+		341497CCBA44AD71857EBF5B /* Pods_GBMChallenge_GBMChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6F7822C2700CB308E2C330 /* Pods_GBMChallenge_GBMChallengeUITests.framework */; };
+		49312E08D6A7CA3FE11545CD /* Pods_GBMChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0367F76D5E95949CEB2C4249 /* Pods_GBMChallenge.framework */; };
+		FAF4F969197398DD2E28FD3A /* Pods_GBMChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091966B543356ECD24066A05 /* Pods_GBMChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274DC6FD269EA87E00F6E463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274DC6DE269EA87800F6E463 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274DC6E5269EA87800F6E463;
+			remoteInfo = GBMChallenge;
+		};
+		274DC708269EA87E00F6E463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274DC6DE269EA87800F6E463 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274DC6E5269EA87800F6E463;
+			remoteInfo = GBMChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0367F76D5E95949CEB2C4249 /* Pods_GBMChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		091966B543356ECD24066A05 /* Pods_GBMChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D11A7C0D47358085019BB4 /* Pods-GBMChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-GBMChallengeTests/Pods-GBMChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		27149EBF26A3C18500872F66 /* GBMIPCDetailListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCDetailListVC.swift; sourceTree = "<group>"; };
+		27149EC026A3C18500872F66 /* GBMIPCDetailListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBMIPCDetailListVC.xib; sourceTree = "<group>"; };
+		27149EC726A3C3C600872F66 /* GBMIPCChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCChartVC.swift; sourceTree = "<group>"; };
+		27149EC826A3C3C600872F66 /* GBMIPCChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBMIPCChartVC.xib; sourceTree = "<group>"; };
+		27149ECE26A3C76E00872F66 /* GBMIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GBMIcons.xcassets; sourceTree = "<group>"; };
+		27149EE026A3F56000872F66 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		27149EEF26A41F6D00872F66 /* GBMIPCCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCCellTableViewCell.swift; sourceTree = "<group>"; };
+		27149EF026A41F6D00872F66 /* GBMIPCCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBMIPCCellTableViewCell.xib; sourceTree = "<group>"; };
+		2740985C269EB29F00BD3E8F /* GBMConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMConnectManager.swift; sourceTree = "<group>"; };
+		27409874269EB71A00BD3E8F /* GBMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMError.swift; sourceTree = "<group>"; };
+		27409881269EC3F200BD3E8F /* GBMIPCEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCEntity.swift; sourceTree = "<group>"; };
+		274DC6E6269EA87800F6E463 /* GBMChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBMChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		274DC6E9269EA87800F6E463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		274DC6F5269EA87D00F6E463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		274DC6F7269EA87D00F6E463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274DC6FC269EA87E00F6E463 /* GBMChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBMChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274DC700269EA87E00F6E463 /* GBMChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMChallengeTests.swift; sourceTree = "<group>"; };
+		274DC702269EA87E00F6E463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274DC707269EA87E00F6E463 /* GBMChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBMChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274DC70B269EA87E00F6E463 /* GBMChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMChallengeUITests.swift; sourceTree = "<group>"; };
+		274DC70D269EA87E00F6E463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276F2B8E26A395E300B30609 /* GBMColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GBMColors.xcassets; sourceTree = "<group>"; };
+		276F2B9426A3991000B30609 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		276F2B9826A39A1800B30609 /* Branding.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Branding.xcassets; sourceTree = "<group>"; };
+		27A9FEAA26A530430055512D /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		27D19F9426A4EA0000C82298 /* GBMIPCChartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCChartProtocol.swift; sourceTree = "<group>"; };
+		27D19FB026A4F0F600C82298 /* GBMIPCChartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCChartInteractor.swift; sourceTree = "<group>"; };
+		27D19FB626A4F7F100C82298 /* GBMIPCChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCChartPresenter.swift; sourceTree = "<group>"; };
+		27D19FBB26A4FAF200C82298 /* GBMIPCChartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMIPCChartRouter.swift; sourceTree = "<group>"; };
+		27E2775026A38E1D003E15A8 /* GBMLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBMLoginVC.swift; sourceTree = "<group>"; };
+		27E2775126A38E1D003E15A8 /* GBMLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBMLoginVC.xib; sourceTree = "<group>"; };
+		27E2776A26A39146003E15A8 /* GBMInvestmentAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GBMInvestmentAnimation.json; sourceTree = "<group>"; };
+		27FE08F326A3A6AC00DBBF3E /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		27FE08F426A3A6AC00DBBF3E /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		5A6F7822C2700CB308E2C330 /* Pods_GBMChallenge_GBMChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMChallenge_GBMChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2AF0C60B64258B384EE23A /* Pods-GBMChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-GBMChallengeTests/Pods-GBMChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6880932425FF2E416A882DB4 /* Pods-GBMChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallenge.release.xcconfig"; path = "Target Support Files/Pods-GBMChallenge/Pods-GBMChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C1EF82812E468E4F7549B321 /* Pods-GBMChallenge-GBMChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallenge-GBMChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-GBMChallenge-GBMChallengeUITests/Pods-GBMChallenge-GBMChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECAD2F97741BB0606F15B409 /* Pods-GBMChallenge-GBMChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallenge-GBMChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-GBMChallenge-GBMChallengeUITests/Pods-GBMChallenge-GBMChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FCDB348F1FF390FF49292280 /* Pods-GBMChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GBMChallenge/Pods-GBMChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274DC6E3269EA87800F6E463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49312E08D6A7CA3FE11545CD /* Pods_GBMChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC6F9269EA87E00F6E463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF4F969197398DD2E28FD3A /* Pods_GBMChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC704269EA87E00F6E463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341497CCBA44AD71857EBF5B /* Pods_GBMChallenge_GBMChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1698ED5976854CEBF2128D63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0367F76D5E95949CEB2C4249 /* Pods_GBMChallenge.framework */,
+				5A6F7822C2700CB308E2C330 /* Pods_GBMChallenge_GBMChallengeUITests.framework */,
+				091966B543356ECD24066A05 /* Pods_GBMChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27149EBE26A3C16100872F66 /* IPCDetailList */ = {
+			isa = PBXGroup;
+			children = (
+				27149EEE26A41F5100872F66 /* Cell */,
+				27149EBF26A3C18500872F66 /* GBMIPCDetailListVC.swift */,
+				27149EC026A3C18500872F66 /* GBMIPCDetailListVC.xib */,
+			);
+			path = IPCDetailList;
+			sourceTree = "<group>";
+		};
+		27149EC626A3C3A900872F66 /* IPCChart */ = {
+			isa = PBXGroup;
+			children = (
+				27D19FB526A4F7C300C82298 /* Entity */,
+				27D19F9326A4E9DC00C82298 /* Protocols */,
+				27D19F9226A4E9CB00C82298 /* Router */,
+				27D19F9126A4E9C000C82298 /* View */,
+				27D19F9026A4E9B700C82298 /* Interactor */,
+				27D19F8F26A4E9A900C82298 /* Presenter */,
+			);
+			path = IPCChart;
+			sourceTree = "<group>";
+		};
+		27149EEE26A41F5100872F66 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				27149EEF26A41F6D00872F66 /* GBMIPCCellTableViewCell.swift */,
+				27149EF026A41F6D00872F66 /* GBMIPCCellTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2740985B269EB1CC00BD3E8F /* GBMConnectManager */ = {
+			isa = PBXGroup;
+			children = (
+				2740985C269EB29F00BD3E8F /* GBMConnectManager.swift */,
+				27409874269EB71A00BD3E8F /* GBMError.swift */,
+			);
+			path = GBMConnectManager;
+			sourceTree = "<group>";
+		};
+		2740987E269EC39B00BD3E8F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				27149EC626A3C3A900872F66 /* IPCChart */,
+				27149EBE26A3C16100872F66 /* IPCDetailList */,
+				27E2774926A38DC0003E15A8 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		274DC6DD269EA87800F6E463 = {
+			isa = PBXGroup;
+			children = (
+				2740985B269EB1CC00BD3E8F /* GBMConnectManager */,
+				274DC6E8269EA87800F6E463 /* GBMChallenge */,
+				274DC6FF269EA87E00F6E463 /* GBMChallengeTests */,
+				274DC70A269EA87E00F6E463 /* GBMChallengeUITests */,
+				274DC6E7269EA87800F6E463 /* Products */,
+				AC5037D39A1E7B752776C11D /* Pods */,
+				1698ED5976854CEBF2128D63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		274DC6E7269EA87800F6E463 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274DC6E6269EA87800F6E463 /* GBMChallenge.app */,
+				274DC6FC269EA87E00F6E463 /* GBMChallengeTests.xctest */,
+				274DC707269EA87E00F6E463 /* GBMChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274DC6E8269EA87800F6E463 /* GBMChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				276F2B8226A393A700B30609 /* Utils */,
+				27E2776826A38FEB003E15A8 /* Resources */,
+				2740987E269EC39B00BD3E8F /* Features */,
+				274DC6E9269EA87800F6E463 /* AppDelegate.swift */,
+				274DC6F4269EA87D00F6E463 /* LaunchScreen.storyboard */,
+				274DC6F7269EA87D00F6E463 /* Info.plist */,
+			);
+			path = GBMChallenge;
+			sourceTree = "<group>";
+		};
+		274DC6FF269EA87E00F6E463 /* GBMChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				274DC700269EA87E00F6E463 /* GBMChallengeTests.swift */,
+				274DC702269EA87E00F6E463 /* Info.plist */,
+			);
+			path = GBMChallengeTests;
+			sourceTree = "<group>";
+		};
+		274DC70A269EA87E00F6E463 /* GBMChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				274DC70B269EA87E00F6E463 /* GBMChallengeUITests.swift */,
+				274DC70D269EA87E00F6E463 /* Info.plist */,
+			);
+			path = GBMChallengeUITests;
+			sourceTree = "<group>";
+		};
+		276F2B8226A393A700B30609 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27FE08F226A3A6AC00DBBF3E /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		276F2B9326A398E500B30609 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				276F2B9426A3991000B30609 /* FontAwesome.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		27D19F8F26A4E9A900C82298 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				27D19FB626A4F7F100C82298 /* GBMIPCChartPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		27D19F9026A4E9B700C82298 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				27D19FB026A4F0F600C82298 /* GBMIPCChartInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		27D19F9126A4E9C000C82298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27149EC726A3C3C600872F66 /* GBMIPCChartVC.swift */,
+				27149EC826A3C3C600872F66 /* GBMIPCChartVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27D19F9226A4E9CB00C82298 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				27D19FBB26A4FAF200C82298 /* GBMIPCChartRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		27D19F9326A4E9DC00C82298 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				27D19F9426A4EA0000C82298 /* GBMIPCChartProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		27D19FB526A4F7C300C82298 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				27409881269EC3F200BD3E8F /* GBMIPCEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		27E2774926A38DC0003E15A8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				27E2774B26A38DDB003E15A8 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		27E2774B26A38DDB003E15A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27E2775026A38E1D003E15A8 /* GBMLoginVC.swift */,
+				27E2775126A38E1D003E15A8 /* GBMLoginVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27E2776826A38FEB003E15A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				276F2B9326A398E500B30609 /* Fonts */,
+				27E2776926A38FF2003E15A8 /* Animations */,
+				276F2B8E26A395E300B30609 /* GBMColors.xcassets */,
+				27149ECE26A3C76E00872F66 /* GBMIcons.xcassets */,
+				276F2B9826A39A1800B30609 /* Branding.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27E2776926A38FF2003E15A8 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				27E2776A26A39146003E15A8 /* GBMInvestmentAnimation.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		27FE08F226A3A6AC00DBBF3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27FE08F326A3A6AC00DBBF3E /* UIViewController.swift */,
+				27FE08F426A3A6AC00DBBF3E /* UINavigationController.swift */,
+				27149EE026A3F56000872F66 /* String.swift */,
+				27A9FEAA26A530430055512D /* Float.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC5037D39A1E7B752776C11D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCDB348F1FF390FF49292280 /* Pods-GBMChallenge.debug.xcconfig */,
+				6880932425FF2E416A882DB4 /* Pods-GBMChallenge.release.xcconfig */,
+				C1EF82812E468E4F7549B321 /* Pods-GBMChallenge-GBMChallengeUITests.debug.xcconfig */,
+				ECAD2F97741BB0606F15B409 /* Pods-GBMChallenge-GBMChallengeUITests.release.xcconfig */,
+				5C2AF0C60B64258B384EE23A /* Pods-GBMChallengeTests.debug.xcconfig */,
+				13D11A7C0D47358085019BB4 /* Pods-GBMChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		274DC6E5269EA87800F6E463 /* GBMChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274DC710269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallenge" */;
+			buildPhases = (
+				38A02CEF7CC882BB6D403173 /* [CP] Check Pods Manifest.lock */,
+				274DC6E2269EA87800F6E463 /* Sources */,
+				274DC6E3269EA87800F6E463 /* Frameworks */,
+				274DC6E4269EA87800F6E463 /* Resources */,
+				6AA3E0012CD12A7BB937752F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBMChallenge;
+			productName = GBMChallenge;
+			productReference = 274DC6E6269EA87800F6E463 /* GBMChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		274DC6FB269EA87E00F6E463 /* GBMChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274DC713269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallengeTests" */;
+			buildPhases = (
+				5A46A8EA6C42F1BE42AD1B2E /* [CP] Check Pods Manifest.lock */,
+				274DC6F8269EA87E00F6E463 /* Sources */,
+				274DC6F9269EA87E00F6E463 /* Frameworks */,
+				274DC6FA269EA87E00F6E463 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274DC6FE269EA87E00F6E463 /* PBXTargetDependency */,
+			);
+			name = GBMChallengeTests;
+			productName = GBMChallengeTests;
+			productReference = 274DC6FC269EA87E00F6E463 /* GBMChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		274DC706269EA87E00F6E463 /* GBMChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274DC716269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallengeUITests" */;
+			buildPhases = (
+				6B51D3562AF59527CC175763 /* [CP] Check Pods Manifest.lock */,
+				274DC703269EA87E00F6E463 /* Sources */,
+				274DC704269EA87E00F6E463 /* Frameworks */,
+				274DC705269EA87E00F6E463 /* Resources */,
+				F44CFE50B15964AC40A5B600 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274DC709269EA87E00F6E463 /* PBXTargetDependency */,
+			);
+			name = GBMChallengeUITests;
+			productName = GBMChallengeUITests;
+			productReference = 274DC707269EA87E00F6E463 /* GBMChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274DC6DE269EA87800F6E463 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					274DC6E5269EA87800F6E463 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					274DC6FB269EA87E00F6E463 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 274DC6E5269EA87800F6E463;
+					};
+					274DC706269EA87E00F6E463 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 274DC6E5269EA87800F6E463;
+					};
+				};
+			};
+			buildConfigurationList = 274DC6E1269EA87800F6E463 /* Build configuration list for PBXProject "GBMChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 274DC6DD269EA87800F6E463;
+			productRefGroup = 274DC6E7269EA87800F6E463 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				274DC6E5269EA87800F6E463 /* GBMChallenge */,
+				274DC6FB269EA87E00F6E463 /* GBMChallengeTests */,
+				274DC706269EA87E00F6E463 /* GBMChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274DC6E4269EA87800F6E463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276F2B9926A39A1800B30609 /* Branding.xcassets in Resources */,
+				27149EC226A3C18500872F66 /* GBMIPCDetailListVC.xib in Resources */,
+				274DC6F6269EA87D00F6E463 /* LaunchScreen.storyboard in Resources */,
+				27149ECA26A3C3C600872F66 /* GBMIPCChartVC.xib in Resources */,
+				27E2776B26A39147003E15A8 /* GBMInvestmentAnimation.json in Resources */,
+				27149ECF26A3C76E00872F66 /* GBMIcons.xcassets in Resources */,
+				27FE08D526A3A51400DBBF3E /* FontAwesome.otf in Resources */,
+				27149EF226A41F6D00872F66 /* GBMIPCCellTableViewCell.xib in Resources */,
+				276F2B8F26A395E300B30609 /* GBMColors.xcassets in Resources */,
+				27E2775326A38E1D003E15A8 /* GBMLoginVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC6FA269EA87E00F6E463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC705269EA87E00F6E463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A02CEF7CC882BB6D403173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBMChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A46A8EA6C42F1BE42AD1B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBMChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA3E0012CD12A7BB937752F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge/Pods-GBMChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge/Pods-GBMChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge/Pods-GBMChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B51D3562AF59527CC175763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBMChallenge-GBMChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44CFE50B15964AC40A5B600 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge-GBMChallengeUITests/Pods-GBMChallenge-GBMChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge-GBMChallengeUITests/Pods-GBMChallenge-GBMChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMChallenge-GBMChallengeUITests/Pods-GBMChallenge-GBMChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274DC6E2269EA87800F6E463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27149EF126A41F6D00872F66 /* GBMIPCCellTableViewCell.swift in Sources */,
+				27409875269EB71A00BD3E8F /* GBMError.swift in Sources */,
+				27409882269EC3F200BD3E8F /* GBMIPCEntity.swift in Sources */,
+				27149EE126A3F56100872F66 /* String.swift in Sources */,
+				27D19F9526A4EA0000C82298 /* GBMIPCChartProtocol.swift in Sources */,
+				27D19FB126A4F0F600C82298 /* GBMIPCChartInteractor.swift in Sources */,
+				2740985D269EB29F00BD3E8F /* GBMConnectManager.swift in Sources */,
+				27D19FBC26A4FAF200C82298 /* GBMIPCChartRouter.swift in Sources */,
+				27E2775226A38E1D003E15A8 /* GBMLoginVC.swift in Sources */,
+				27149EC126A3C18500872F66 /* GBMIPCDetailListVC.swift in Sources */,
+				274DC6EA269EA87800F6E463 /* AppDelegate.swift in Sources */,
+				27FE08F626A3A6AC00DBBF3E /* UINavigationController.swift in Sources */,
+				27A9FEAB26A530430055512D /* Float.swift in Sources */,
+				27FE08F526A3A6AC00DBBF3E /* UIViewController.swift in Sources */,
+				27149EC926A3C3C600872F66 /* GBMIPCChartVC.swift in Sources */,
+				27D19FB726A4F7F100C82298 /* GBMIPCChartPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC6F8269EA87E00F6E463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274DC701269EA87E00F6E463 /* GBMChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274DC703269EA87E00F6E463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274DC70C269EA87E00F6E463 /* GBMChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274DC6FE269EA87E00F6E463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274DC6E5269EA87800F6E463 /* GBMChallenge */;
+			targetProxy = 274DC6FD269EA87E00F6E463 /* PBXContainerItemProxy */;
+		};
+		274DC709269EA87E00F6E463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274DC6E5269EA87800F6E463 /* GBMChallenge */;
+			targetProxy = 274DC708269EA87E00F6E463 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		274DC6F4269EA87D00F6E463 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274DC6F5269EA87D00F6E463 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		274DC70E269EA87E00F6E463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		274DC70F269EA87E00F6E463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		274DC711269EA87E00F6E463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDB348F1FF390FF49292280 /* Pods-GBMChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		274DC712269EA87E00F6E463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6880932425FF2E416A882DB4 /* Pods-GBMChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		274DC714269EA87E00F6E463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2AF0C60B64258B384EE23A /* Pods-GBMChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBMChallenge.app/GBMChallenge";
+			};
+			name = Debug;
+		};
+		274DC715269EA87E00F6E463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D11A7C0D47358085019BB4 /* Pods-GBMChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBMChallenge.app/GBMChallenge";
+			};
+			name = Release;
+		};
+		274DC717269EA87E00F6E463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1EF82812E468E4F7549B321 /* Pods-GBMChallenge-GBMChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GBMChallenge;
+			};
+			name = Debug;
+		};
+		274DC718269EA87E00F6E463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECAD2F97741BB0606F15B409 /* Pods-GBMChallenge-GBMChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJVHM222CX;
+				INFOPLIST_FILE = GBMChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikevillegas.GBMChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GBMChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274DC6E1269EA87800F6E463 /* Build configuration list for PBXProject "GBMChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274DC70E269EA87E00F6E463 /* Debug */,
+				274DC70F269EA87E00F6E463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274DC710269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274DC711269EA87E00F6E463 /* Debug */,
+				274DC712269EA87E00F6E463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274DC713269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274DC714269EA87E00F6E463 /* Debug */,
+				274DC715269EA87E00F6E463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274DC716269EA87E00F6E463 /* Build configuration list for PBXNativeTarget "GBMChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274DC717269EA87E00F6E463 /* Debug */,
+				274DC718269EA87E00F6E463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274DC6DE269EA87800F6E463 /* Project object */;
+}

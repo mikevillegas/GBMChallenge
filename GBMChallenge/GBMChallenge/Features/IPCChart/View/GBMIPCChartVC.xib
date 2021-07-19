@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBMIPCChartVC" customModule="GBMChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="chartView" destination="vf1-Gc-eQT" id="PYp-aK-kHx"/>
+                <outlet property="lblDate" destination="Vrn-Nd-yVr" id="dhU-hU-is9"/>
+                <outlet property="lblInformation" destination="2ME-Fc-HAm" id="1YT-Bw-NZf"/>
+                <outlet property="lblPercent" destination="KeF-zM-VeR" id="OFM-4r-HXl"/>
+                <outlet property="lblPrice" destination="ioc-bk-Rml" id="YLh-6w-eld"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-Gc-eQT" customClass="Chart" customModule="SwiftChart">
+                    <rect key="frame" x="10" y="54" width="394" height="760"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aQc-G9-eEP">
+                    <rect key="frame" x="10" y="824" width="394" height="28"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-rf-VnH">
+                            <rect key="frame" x="0.0" y="0.0" width="196" height="28"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Change:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ME-Fc-HAm">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="13"/>
+                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="13"/>
+                                    <color key="textColor" name="GBMSecondaryColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porcentaje :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-zM-VeR">
+                                    <rect key="frame" x="0.0" y="15" width="196" height="13"/>
+                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="13"/>
+                                    <color key="textColor" name="GBMSecondaryColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-QA-SWc">
+                            <rect key="frame" x="198" y="0.0" width="196" height="28"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrn-Nd-yVr">
+                                    <rect key="frame" x="0.0" y="0.0" width="196" height="13"/>
+                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="13"/>
+                                    <color key="textColor" name="GBMSecondaryColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Precio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioc-bk-Rml">
+                                    <rect key="frame" x="0.0" y="15" width="196" height="13"/>
+                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="13"/>
+                                    <color key="textColor" name="GBMSecondaryColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aoR-QA-SWc" secondAttribute="trailing" id="NcZ-ik-3q2"/>
+                        <constraint firstItem="tYr-rf-VnH" firstAttribute="leading" secondItem="aQc-G9-eEP" secondAttribute="leading" id="SRS-6F-0F1"/>
+                        <constraint firstAttribute="bottom" secondItem="tYr-rf-VnH" secondAttribute="bottom" id="VZy-DV-ozR"/>
+                        <constraint firstAttribute="bottom" secondItem="aoR-QA-SWc" secondAttribute="bottom" id="obA-4t-YRK"/>
+                        <constraint firstItem="tYr-rf-VnH" firstAttribute="top" secondItem="aQc-G9-eEP" secondAttribute="top" id="ohP-FN-7dj"/>
+                        <constraint firstItem="aoR-QA-SWc" firstAttribute="top" secondItem="aQc-G9-eEP" secondAttribute="top" id="ooj-Ul-25H"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="GBMPrimaryColor"/>
+            <constraints>
+                <constraint firstItem="aQc-G9-eEP" firstAttribute="top" secondItem="vf1-Gc-eQT" secondAttribute="bottom" constant="10" id="33r-6E-hJG"/>
+                <constraint firstItem="vf1-Gc-eQT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="C03-0T-88A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aQc-G9-eEP" secondAttribute="trailing" constant="10" id="CBT-tL-Iwf"/>
+                <constraint firstItem="vf1-Gc-eQT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="XEM-g3-rWh"/>
+                <constraint firstItem="aQc-G9-eEP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="bPA-jA-1aP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aQc-G9-eEP" secondAttribute="bottom" constant="10" id="mIn-gc-9Qq"/>
+                <constraint firstAttribute="trailing" secondItem="vf1-Gc-eQT" secondAttribute="trailing" constant="10" id="xnD-5Q-tbP"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="GBMPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GBMSecondaryColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

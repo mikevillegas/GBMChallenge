@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - lottie-ios (3.2.3)
+  - SwiftChart (1.0.1)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Charts
+  - lottie-ios
+  - SwiftChart
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - lottie-ios
+    - SwiftChart
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 06e328c0f6ff84784d79b2b838cec7d167e7ed9c
+
+COCOAPODS: 1.10.1
